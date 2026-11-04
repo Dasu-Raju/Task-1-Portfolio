@@ -1,0 +1,168 @@
+<link rel="stylesheet" href="style.css">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #333;
+    line-height: 1.7;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    color: #38bdf8;
+    text-decoration: underline;
+}
+
+main {
+    min-height: 70vh;
+    padding: 20px 0;
+}
+
+section {
+    background: white;
+    margin: 25px auto;
+    padding: 35px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+h2 {
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #1e40af;
+    margin-bottom: 8px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 25px;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.button,
+button {
+    display: inline-block;
+    background: #172554;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover,
+button:hover {
+    background: #2563eb;
+}
+
+article {
+    background: #eef2ff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+form {
+    max-width: 550px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    section {
+        width: 94%;
+        padding: 22px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
